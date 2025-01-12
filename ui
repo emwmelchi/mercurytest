@@ -519,7 +519,7 @@ function Library:create(options)
 		Name = "Mercury+",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://github.com/SpyTYX/mercury-plus"
+		Link = "https://github.com/eqha/mercury-plus"
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
@@ -1061,15 +1061,15 @@ function Library:create(options)
 		end,
 	}
 	rawset(mt, "creditsContainer", creditsTab.container)
-	creditsTab:credit{Name = "eqha", Description = "Script Developer", Discord = "macky_cheese", V3rmillion = nil}
-	creditsTab:credit{Name = "Mac", Description = "Script Developer", Discord = "eqha_", V3rmillion = nil}
+	creditsTab:credit{Name = "eqha", Description = "Script Developer", Discord = "eqha_", V3rmillion = nil}
+	creditsTab:credit{Name = "Mac", Description = "Script Developer", Discord = "macky_cheese", V3rmillion = nil}
 	return mt
 end
 
 function Library:notification(options)
 	options = self:set_defaults({
 		Title = "Mercury+",
-		Text = "Have you starred our repo yet?",
+		Text = "Have Fun!",
 		Duration = 3,
 		Callback = function()
 			
